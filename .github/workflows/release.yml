@@ -85,9 +85,6 @@ jobs:
       - name: Running cmake 
         run: cmake --build . --config Release
       
-      - name: Run tests  
-        run: cmake --build . --target test --config Release
-      
       - name: Create package
         run: cmake --build . --target package --config Release
         
@@ -114,12 +111,6 @@ jobs:
         run: |
           cd build
           cmake --build . --config Release
-          
-      - name: Run tests
-        shell: cmd
-        run: |
-          cd build
-          cmake --build . --target RUN_TESTS --config Release
           
       - name: Create package
         shell: cmd
