@@ -1,3 +1,13 @@
+# vscode
+.vscode
+bulk.exe
+bulk_debug.exe
+test_bulk_gtest.exe
+TODO
+
+# cmake
+/build/
+
 # Prerequisites
 *.d
 
